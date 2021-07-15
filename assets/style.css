@@ -1,0 +1,52 @@
+body {
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+}
+
+#title {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.h2 {
+    font-weight: bolder;
+    font-size: 15px;
+}
+
+#highscores-link {
+    color: rgb(130, 44, 130);
+    font-size: 15px;
+}
+
+p {
+    margin: 15px 0;
+}
+
+button {
+    background: rgb(130, 44, 130);
+    color: white;
+    border-radius: 5px;
+    padding: 2px 10px;
+    margin-right: 10px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+}
+
+button:hover {
+    background: rgb(66, 23, 66);
+}
+
+#container {
+    overflow: auto;
+    max-width: 90%;
+    display: block;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 100px;
+}
+
+.start-page {
+    text-align: center;
+}
