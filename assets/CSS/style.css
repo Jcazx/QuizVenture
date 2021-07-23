@@ -334,7 +334,7 @@ background-color: #014D4C;
 }
 
 
-@media (max-width: 690px) {
+/* @media (max-width: 690px) {
     body {
         font-size: 1rem;
     }
@@ -378,4 +378,18 @@ background-color: #014D4C;
     #result {
         font-size: 0.8rem;
     }
-}
+} */
+
+/* Media Query for low resolution  Tablets, Ipads */ 
+    @media (min-width: 481px) and (max-width: 767px) { 
+        .status, .menu-buttons, .quiz-container {
+            padding-bottom: 1vh;
+            padding-top: 0;
+        }
+
+        .options {
+            font-size: 15px;
+            margin: 5px;
+        }
+
+    } 
