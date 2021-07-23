@@ -403,7 +403,7 @@ p {
 .olivedrab {
     background-color: #00A896;
 }
-/* 
+
 @media (max-width: 2000px) {
     .Logo {
         display: block;
@@ -424,7 +424,7 @@ p {
         border-right: 0.8em solid;
         box-sizing: border-box;
         animation: typing 3s steps(11, end), blink 1s step-end infinite;
-        font-size: 15px;
+        font-size: 9px;
     }
     .scoreBtn,
     .animeBtn,
@@ -626,9 +626,8 @@ p {
             margin-right: auto;
         }
     }
-} */
-
-/* Media Query for low resolution  Tablets, Ipads */ 
+}
+Media Query for low resolution  Tablets, Ipads */ 
     @media (min-width: 481px) and (max-width: 767px) { 
         .status, .menu-buttons, .quiz-container {
             padding-bottom: 1vh;
@@ -640,4 +639,4 @@ p {
             margin: 5px;
         }
 
-    }  */
+    }
