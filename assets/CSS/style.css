@@ -1,73 +1,140 @@
-*{
+* {
     margin: 0 auto;
     padding: 0;
     box-sizing: border-box;
     font-size: 100%;
     scroll-behavior: smooth;
 }
-body{
-    background-color:#eef5e0;
+
+body {
+    background-color: #eef5e0;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     font-size: 30px;
 }
 
-.Logo{
+.Logo {
     margin-left: 38.5%;
 }
+
 .start-page {
     text-align: center;
 }
 
-.scoreBtn, .animeBtn, .musicBtn, .artBtn, .vgBtn, .cartoonBtn, .mythBtn, .booksBtn, .genBtn, .filmBtn{
-	background-color: #00a896;
-	border-radius:13px;
+
+/* Typewriter Animation */
+
+.typewriter {
+    display: block;
+    width: max-content;
     text-align: center;
-	cursor:pointer;
-	color: #013635;
+    align-items: center;
+    margin: auto;
+    padding: 20px 0;
+    font-size: 50px;
+}
+
+.typewriter h1 {
+    display: inline-block;
+    overflow: hidden;
+    letter-spacing: 2px;
+    white-space: nowrap;
+    font-size: 2.5em;
+    border-right: 0.8em solid;
+    box-sizing: border-box;
+    animation: typing 3s steps(11, end), blink 1s step-end infinite;
+    font-size: 20px;
+}
+
+.typewriter h1 a {
+    text-decoration: none;
+}
+
+@keyframes typing {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from,
+    to {
+        border-color: #01363598;
+    }
+    50% {
+        border-color: transparent;
+    }
+}
+
+.scoreBtn,
+.animeBtn,
+.musicBtn,
+.artBtn,
+.vgBtn,
+.cartoonBtn,
+.mythBtn,
+.booksBtn,
+.genBtn,
+.filmBtn {
+    background-color: #00a896;
+    border-radius: 13px;
+    text-align: center;
+    cursor: pointer;
+    color: #013635;
     display: block;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
-	text-decoration:none;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 10px;
     margin-left: 250px;
     margin-right: 250px;
     font-weight: bold;
 }
 
-
-.animeBtn:hover, .scoreBtn:hover, .musicBtn:hover, .artBtn:hover, .vgBtn:hover, .mythBtn:hover, .cartoonBtn:hover, .booksBtn:hover, .genBtn:hover, .filmBtn:hover{
-	background-color:#01B698;
-	border:2px solid #014D4C;
-
+.animeBtn:hover,
+.scoreBtn:hover,
+.musicBtn:hover,
+.artBtn:hover,
+.vgBtn:hover,
+.mythBtn:hover,
+.cartoonBtn:hover,
+.booksBtn:hover,
+.genBtn:hover,
+.filmBtn:hover {
+    background-color: #01B698;
+    border: 2px solid #014D4C;
 }
 
- p{ 
+p {
     max-width: 90%;
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 0px;
     font-size: 25px;
-    color:#014D4C;
+    color: #014D4C;
 }
 
 .status-bar {
-    border: solid 1px  #014D4C;;
+    border: solid 0px #014D4C;
+    ;
     border-radius: 10px;
     height: 50px;
     text-align: center;
-    width: 700px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
-
 
 .container.status {
-    width: 100px;
-    max-width: 700px; 
-    margin-right: 950px;
+    width: auto;
+    max-width: auto;
+    margin-right: auto;
 }
-
 
 .q1 {
     border: solid transparent;
@@ -78,12 +145,12 @@ body{
 .q10 {
     border: solid transparent;
     border-radius: 0 10px 10px 0;
+    padding: 0;
 }
 
 .question-counter {
     text-align: center;
 }
-
 
 
 /*------------------------ Quiz */
@@ -104,14 +171,16 @@ body{
     text-align: center;
     color: #012928;
     background-color: #00a896;
-	border-radius:13px;
+    border-radius: 13px;
     text-align: center;
-	cursor:pointer;
+    cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
+    font-size: 17px;
+    padding: 16px 76px;
     margin-top: 10px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .menu-buttons .end-game {
@@ -120,60 +189,63 @@ body{
     text-align: center;
     color: #012928;
     background-color: #00a896;
-	border-radius:13px;
+    border-radius: 13px;
     text-align: center;
-	cursor:pointer;
+    cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
+    font-size: 17px;
+    padding: 16px 76px;
     margin-top: 10px;
     font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.menu-buttons .end-game:hover, .menu-buttons .home:hover {
+.menu-buttons .end-game:hover,
+.menu-buttons .home:hover {
     padding: 0;
     display: block;
     text-align: center;
     color: #012928;
     background-color: #f3f5e0ee;
-	border-radius:13px;
+    border-radius: 13px;
     text-align: center;
-	cursor:pointer;
+    cursor: pointer;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
+    font-size: 17px;
+    padding: 16px 76px;
     margin-top: 10px;
     font-weight: bold;
     border: 6px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-
-.score-page-buttons .home, .play-again  {
-	background-color: #00a896;
-	border-radius:13px;
-	border: 0px;
-	display:block;
+.score-page-buttons .home,
+.play-again {
+    background-color: #00a896;
+    border-radius: 13px;
+    border: 0px;
+    display: block;
     text-align: center;
-	cursor:pointer;
-	color: #012928;
+    color: #012928;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
-	text-decoration:none;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-
-.menu-buttons .end-game:hover, .menu-buttons .home:hover  {
-	background-color:#01B698;
-	border:2px solid #014D4C;
-
+.menu-buttons .end-game:hover,
+.menu-buttons .home:hover {
+    background-color: #01B698;
+    border: 2px solid #014D4C;
 }
 
 #quiz-page-background {
-   background-color: #f3f5e0ee;
+    background-color: #f3f5e0ee;
 }
 
 #quiz-background {
@@ -183,7 +255,6 @@ body{
     margin: 0;
     text-align: center;
 }
-
 
 .quiz-container {
     padding: 10px;
@@ -204,48 +275,45 @@ body{
     height: 0;
     width: 0;
     margin: auto;
-
 }
 
 .options {
-    background-color:#00a896;
-	border-radius:13px;
-	border: 0px;
-	display:block;
+    background-color: #00a896;
+    border-radius: 13px;
+    border: 0px;
+    display: block;
     text-align: center;
-	cursor:pointer;
-	color:#134c3c;
-	font-family:Arial;
-	font-size:25px;
-	padding:16px 76px;
-	text-decoration:none;
+    cursor: pointer;
+    color: #134c3c;
+    font-family: Arial;
+    font-size: 25px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 10px;
 }
 
-.options:hover{
-    background-color:#e0ceaa;
-	border:2px solid #134c3c;
+.options:hover {
+    background-color: #e0ceaa;
+    border: 2px solid #134c3c;
 }
 
-
 #next {
-	background-color: #00a896;
-	border-radius:13px;
-	border: 0px;
+    background-color: #00a896;
+    border-radius: 13px;
+    border: 0px;
     text-align: center;
-	cursor:pointer;
-	color: #014D4C;
+    cursor: pointer;
+    color: #014D4C;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
-	text-decoration:none;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 7px;
 }
 
-#next:hover{
-	background-color:#01B698;
-	border:2px solid #014D4C;
-
+#next:hover {
+    background-color: #01B698;
+    border: 2px solid #014D4C;
 }
 
 .next-container {
@@ -253,17 +321,17 @@ body{
 }
 
 .see-your-score {
-	background-color: #00a896;
-	border-radius:13px;
-	border: 0px;
-	display:block;
+    background-color: #00a896;
+    border-radius: 13px;
+    border: 0px;
+    display: block;
     text-align: center;
-	cursor:pointer;
-	color: #012928;
+    cursor: pointer;
+    color: #012928;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
-	text-decoration:none;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 10px;
 }
 
@@ -271,9 +339,12 @@ body{
     font-size: 25px;
 }
 
+
 /*------------------------ Score Page */
+
 .score-container {
-    margin-top: 25vh;;
+    margin-top: 25vh;
+    ;
     text-align: center;
 }
 
@@ -282,32 +353,31 @@ body{
     text-align: center;
 }
 
-.score-page-buttons .home, .play-again  {
+.score-page-buttons .home,
+.play-again {
     background-color: #00a896;
-	border-radius:13px;
+    border-radius: 13px;
     text-align: center;
-	cursor:pointer;
-	color: #013635;
+    cursor: pointer;
+    color: #013635;
     display: block;
     font-family: 'Noto Sans', sans-serif;
-	font-size:17px;
-	padding:16px 76px;
-	text-decoration:none;
+    font-size: 17px;
+    padding: 16px 76px;
+    text-decoration: none;
     margin-top: 10px;
     margin-left: 500px;
     margin-right: 500px;
     font-weight: bold;
 }
 
-
 .score-page-buttons .home:hover .play-again:hover {
-	background-color:#01B698;
-	border:2px solid #014D4C;
-
+    background-color: #01B698;
+    border: 2px solid #014D4C;
 }
 
 .copyright {
-   text-align: center;
+    text-align: center;
     font-size: 10px;
     width: 100%;
     max-width: 100%;
@@ -315,14 +385,15 @@ body{
     margin-bottom: 30px;
 }
 
+
 /*------------------------ Color classes */
 
 .red {
-background-color: #014D4C;
+    background-color: #014D4C;
 }
 
 .green {
-    color:#134c3c;
+    color: #134c3c;
 }
 
 .tenne {
@@ -333,49 +404,220 @@ background-color: #014D4C;
     background-color: #00A896;
 }
 
-
-@media (max-width: 690px) {
-    body {
-        font-size: 1rem;
+@media (max-width: 2000px) {
+    .Logo {
+        display: block;
+        margin: auto;
     }
-    .card {
-        font-size: 0.8rem;
+    .typewriter h1 {
+        display: center;
+        overflow: hidden;
+        letter-spacing: 2px;
+        white-space: nowrap;
+        font-size: 2.5em;
+        border-right: 0.8em solid;
+        box-sizing: border-box;
+        animation: typing 3s steps(11, end), blink 1s step-end infinite;
+        font-size: 15px;
     }
-    .btn {
-        font-size: 1rem;
-        margin: 16px 0px 0px 0px;
-        padding: 10px 15px;
+    .scoreBtn,
+    .animeBtn,
+    .musicBtn,
+    .artBtn,
+    .vgBtn,
+    .cartoonBtn,
+    .mythBtn,
+    .booksBtn,
+    .genBtn,
+    .filmBtn {
+        background-color: #00a896;
+        border-radius: 13px;
+        text-align: center;
+        cursor: pointer;
+        color: #013635;
+        display: block;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: auto;
+        padding: auto;
+        text-decoration: none;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: bold;
     }
-    #settings {
-        font-size: 0.8rem;
+    #question {
+        color: #014D4C;
+        font-size: 30px;
+        margin-top: 90px;
     }
-    #password {
-        font-size: 1rem;
+    .menu-buttons .home {
+        align-items: center;
+        border-radius: 13px;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        padding: 10px 50px;
+        margin-top: 10px;
+        font-weight: bold;
     }
-    #result {
-        font-size: 1rem;
+    .menu-buttons .end-game {
+        align-items: center;
+        border-radius: 13px;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        padding: 9px 35px;
+        margin-top: 10px;
+        font-weight: bold;
     }
-}
-
-@media (max-width: 500px) {
-    body {
-        font-size: 0.8rem;
+    .score-page-buttons .home,
+    .play-again {
+        border-radius: 13px;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        padding: 10px 100px;
+        margin-top: 10px;
+        display: inline-block;
+        font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
     }
-    .card {
-        font-size: 0.8rem;
+    .menu-buttons .end-game:hover,
+    .menu-buttons .home:hover {
+        color: #f3f5e0ee;
+        background-color: #014D4C;
+        align-items: center;
+        border-radius: 13px;
+        text-align: center;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 15px;
+        padding: 10px 50px;
+        margin-top: 10px;
+        font-weight: bold;
+        font-weight: bold;
+        border: px #014D4C;
     }
-    .btn {
-        font-size: 0.8rem;
-        margin: 16px 0px 0px 0px;
-        padding: 10px 15px;
+    .status-bar {
+        border: solid 1px #014D4C;
+        ;
+        border-radius: 10px;
+        height: 50px;
+        text-align: center;
+        width: auto;
     }
-    #settings {
-        font-size: 0.8rem;
+    .container.status {
+        width: auto;
+        max-width: auto;
+        margin-right: auto;
     }
-    #password {
-        font-size: 0.8rem;
-    }
-    #result {
-        font-size: 0.8rem;
+    @media (max-width: 470px) {
+        .Logo {
+            display: block;
+            margin: auto;
+        }
+        .scoreBtn,
+        .animeBtn,
+        .musicBtn,
+        .artBtn,
+        .vgBtn,
+        .cartoonBtn,
+        .mythBtn,
+        .booksBtn,
+        .genBtn,
+        .filmBtn {
+            background-color: #00a896;
+            border-radius: 13px;
+            text-align: center;
+            cursor: pointer;
+            color: #013635;
+            display: block;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: auto;
+            padding: auto;
+            text-decoration: none;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: auto;
+            font-weight: bold;
+        }
+        #question {
+            color: #014D4C;
+            font-size: 30px;
+            margin-top: 90px;
+        }
+        p {
+            max-width: 90%;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0px;
+            font-size: 20px;
+            color: #014D4C;
+        }
+        .menu-buttons {
+            padding: 0;
+            width: 80vw;
+            max-width: 700px;
+        }
+        .menu-buttons .home {
+            align-items: center;
+            border-radius: 13px;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 15px;
+            padding: 10px 50px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .menu-buttons .end-game {
+            align-items: center;
+            border-radius: 13px;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 15px;
+            padding: 9px 35px;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        .score-page-buttons .home,
+        .play-again {
+            border-radius: 13px;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 15px;
+            padding: 10px 100px;
+            margin-top: 10px;
+            display: inline-block;
+            font-weight: bold;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .menu-buttons .end-game:hover,
+        .menu-buttons .home:hover {
+            color: #f3f5e0ee;
+            background-color: #014D4C;
+            align-items: center;
+            border-radius: 13px;
+            text-align: center;
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 15px;
+            padding: 10px 50px;
+            margin-top: 10px;
+            font-weight: bold;
+            font-weight: bold;
+            border: px #014D4C;
+        }
+        .status-bar {
+            border: solid 1px #014D4C;
+            ;
+            border-radius: 10px;
+            height: 50px;
+            text-align: center;
+            width: auto;
+        }
+        .container.status {
+            width: auto;
+            max-width: auto;
+            margin-right: auto;
+        }
     }
 }
