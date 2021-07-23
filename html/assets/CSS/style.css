@@ -478,7 +478,7 @@ body {
 }
 
 .alert {
-    color: #00B4CC;
+    color: #013635;
     display: inline;
     font-size: 20px;
 }
@@ -508,10 +508,10 @@ button {
 }
 
 input[type=text] {
-    background: rgba(255, 255, 255, 0.5);
+    background: #00a8977b;
     outline: none;
-    border: 3px solid black;
-    color: black;
+    border: 3px solid #013635;
+    color: #013635;
     font-family: 'arial';
     font-size: 2em;
     padding: 9px;
@@ -520,11 +520,11 @@ input[type=text] {
 }
 
  ::-webkit-input-placeholder {
-    color: black;
+    color: #013601;
 }
 
  :-moz-placeholder {
-    color: black;
+    color: #013601;
 }
 
 #poster {
@@ -532,8 +532,9 @@ input[type=text] {
 }
 
 #poster p {
+    margin-top: 30px;
     font-size: 20px;
-    color: black;
+    color: #013601;
 }
 
 .fetch {
