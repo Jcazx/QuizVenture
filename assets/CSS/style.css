@@ -253,18 +253,22 @@ body{
 }
 
 .see-your-score {
-   text-align: center;
-    font-size: 20px;
-    width: 200px;
-    height: 50px;
-    color: white;
-    margin-top: 25px;
+	background-color: #00a896;
+	border-radius:13px;
+	border: 0px;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+	color: #012928;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
+    margin-top: 10px;
 }
 
 .see-your-score:hover {
     font-size: 25px;
-    padding: 0;
-    color: white;
 }
 
 /*------------------------ Score Page */
@@ -274,24 +278,25 @@ body{
 }
 
 .score-page-heading h3 {
-    color: white;
+    color: #014D4C;
     text-align: center;
 }
 
-
 .score-page-buttons .home, .play-again  {
-	background-color: #00a896;
+    background-color: #00a896;
 	border-radius:13px;
-	border: 0px;
-	display:block;
     text-align: center;
 	cursor:pointer;
-	color: #014D4C;
+	color: #013635;
+    display: block;
     font-family: 'Noto Sans', sans-serif;
 	font-size:17px;
 	padding:16px 76px;
 	text-decoration:none;
     margin-top: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    font-weight: bold;
 }
 
 
