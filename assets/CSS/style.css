@@ -578,10 +578,7 @@ p {
             margin-top: 90px;
         }
         h1 {
-            text-align: center;
-            margin-top: auto;
-            font-size: 3px;
-            color: #014D4C;
+            display:none
         }
         .menu-buttons {
             padding: 0;
