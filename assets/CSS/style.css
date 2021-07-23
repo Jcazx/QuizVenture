@@ -565,7 +565,7 @@ p {
             display: block;
             font-family: 'Noto Sans', sans-serif;
             font-size: auto;
-            padding: auto;
+            padding: 9px 35px;
             text-decoration: none;
             margin-top: 10px;
             margin-left: auto;
