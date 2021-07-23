@@ -386,6 +386,38 @@ p {
 }
 
 
+/* anime score page */
+
+.kemicofa-row {
+    display: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: stretch;
+}
+
+.kemicofa-row>* {
+    flex-basis: 20rem;
+    flex-shrink: 0;
+}
+
+.kemicofa-row .card {
+    display: flex;
+    flex-direction: column;
+}
+
+.kemicofa-row .card>.card-content {
+    flex-grow: 1;
+}
+
+.kemicofa-row .card>.card-image {
+    flex-basis: 25rem;
+    flex-shrink: 0;
+    overflow-y: hidden;
+    background-color: grey;
+}
+
+
 /*------------------------ Color classes */
 
 .red {
@@ -403,6 +435,7 @@ p {
 .olivedrab {
     background-color: #00A896;
 }
+
 @media (max-width: 2000px) {
     .Logo {
         display: block;
