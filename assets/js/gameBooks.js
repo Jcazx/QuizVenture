@@ -10,7 +10,7 @@ let choice;
 
 // Function to get data from api
 async function getData() {
-    const responce = await fetch("https://opentdb.com/api.php?amount=10&category=31&type=multiple");
+    const responce = await fetch("https://opentdb.com/api.php?amount=10&category=10&type=multiple");
     data = await responce.json();
     loadNextRound(data);
 }
@@ -40,6 +40,7 @@ function shuffleOptions(options) {
 // Get questions and answers
 function loadNextRound(data) {
     let question = data.results[currentQuestion].question;
+    const difficulty = data.results[currentQuestion].difficulty;
     let correctAnswer = data.results[currentQuestion].correct_answer;
     let answer2 = data.results[currentQuestion].incorrect_answers[0];
     let answer3 = data.results[currentQuestion].incorrect_answers[1];

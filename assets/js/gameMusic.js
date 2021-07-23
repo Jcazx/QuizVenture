@@ -47,7 +47,6 @@ function loadNextRound(data) {
     let answer4 = data.results[currentQuestion].incorrect_answers[2];
     var answers = shuffleOptions([correctAnswer, answer2, answer3, answer4]);
     document.getElementById("question").innerHTML = question;
-    document.getElementById("difficulty").innerHTML = `Difficulty: ${difficulty}`;
 // Push answers to html
     answers.forEach(answer => {
             output.push(
