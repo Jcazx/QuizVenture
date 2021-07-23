@@ -1,233 +1,376 @@
 *{
+    margin: 0 auto;
+    padding: 0;
     box-sizing: border-box;
+    font-size: 100%;
+    scroll-behavior: smooth;
 }
-body {
-    margin: auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    background-color: whitesmoke;
+body{
+    background-color:#eef5e0;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
 }
-#title {
-    font-weight: bolder;
-    font-size: 40px;
-}
-.h2 {
-    font-weight: bolder;
-    font-size: 15px;
-}
-#highscores-link {
-    color: rgb(130, 44, 130);
-    font-size: 15px;
-}
-p {
-    margin: 15px 0;
-}
-button {
-    background: rgb(130, 44, 130);
-    color: white;
-    border-radius: 5px;
-    padding: 2px 10px;
-    margin-right: 10px;
-    font-size: 15px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-}
-button:hover {
-    background: rgb(66, 23, 66);
-}
-#container {
-    overflow: auto;
-    max-width: 90%;
-    display: block;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 100px;
+
+.Logo{
+    margin-left: 38.5%;
 }
 .start-page {
     text-align: center;
 }
-@media (max-width: 690px) {
-    #container {
-        max-width: 800px;
-    }
-    #title {
-        font-weight: bolder;
-        font-size: 25px;
-    }
-    #highscores-link {
-        font-size: 13px;
-    }
-    nav {
-        font-size: 20px;
-    }
-    #container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-@media (max-width: 470px) {
-    #initials {
-        display: block;
-        margin: 25px 0;
-    }
-    #title {
-        font-weight: bolder;
-        font-size: 15px;
-    }
-    #highscores-link {
-        font-size: 12px;
-    }
-    nav {
-        font-size: 15px;
-    }
-    #container {
-        margin-left: 20px;
-        margin-right: 20px;
-    }
-}
-#clipboard {
-    display: none;
-}
-.result {
-    display: none;
-}
-.card-footer {
+
+.scoreBtn, .animeBtn, .musicBtn, .artBtn, .vgBtn, .cartoonBtn, .mythBtn, .booksBtn, .genBtn, .filmBtn{
+	background-color: #00a896;
+	border-radius:13px;
     text-align: center;
-}
-.card-footer::before {
-    content: " ";
+	cursor:pointer;
+	color: #013635;
     display: block;
-    width: 100%;
-    background: #E7E9EB;
-    height: 2px;
-}
-.card-footer::after {
-    content: " ";
-    display: block;
-    clear: both;
-}
-.btn {
-    border: none;
-    background-color: hsl(360, 91%, 36%);
-    border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
-    color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin: 16px 16px 16px 20px;
-    padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
-}
-.settings {
-    text-align: center;
-}
-button[disabled] {
-    cursor: default;
-    background: #C0C7CF;
-}
-.float-right {
-    float: right;
-}
-#result {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    border: none;
-    display: block;
-    width: 100%;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 85px;
-    font-size: 1.2rem;
-    text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
     margin-top: 10px;
-    margin-bottom: 10px;
-    border: 2px dashed #C0C7CF;
-    border-radius: 6px;
-    resize: inherit;
-    overflow: hidden;
+    margin-left: 250px;
+    margin-right: 250px;
+    font-weight: bold;
 }
-.vgBtn {
-    position: relative;;
-    margin-left: 190px;
-    background: #B06F97;
-    color: #333;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-style: normal;
-    border-radius: 50px;
-    padding: 162.5px 80px;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
- } 
- .animeBtn {
-    position: relative;
-    margin: 5px; /* space between buttons */
-    background: #B06F97; 
-   color: #333;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-style: normal;
-    border-radius: 50px; 
-    padding: 162.5px 105px;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
- }
-.musicBtn {
-    display: inline-block;
-    margin: 5px; /* space between buttons */
-    background: #B06F97; 
-   color: #333;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-style: normal;
-    border-radius: 50px; 
-    padding: 162.5px 105px;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
+
+
+.animeBtn:hover, .scoreBtn:hover, .musicBtn:hover, .artBtn:hover, .vgBtn:hover, .mythBtn:hover, .cartoonBtn:hover, .booksBtn:hover, .genBtn:hover, .filmBtn:hover{
+	background-color:#01B698;
+	border:2px solid #014D4C;
+
 }
-.scoreBtn {
-    display: inline-block;
-    margin: 5px; /* space between buttons */
-    background: #B06F97; 
-   color: #333;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-style: normal;
-    border-radius: 50px; 
-    padding: 162.5px 105px;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
-}
-.artBtn { 
-    position: relative;
-    margin: 5px; /* space between buttons */
-    background: #B06F97; 
-   color: #333;
-    font-size: 1.5em;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
-    font-style: normal;
-    border-radius: 50px; 
-    padding: 162.5px 115px;
-    -moz-transition: all 0.2s;
-    -webkit-transition: all 0.2s;
-    transition: all 0.2s;
- }
-.animeBtn:hover, .musicBtn:hover, .artBtn:hover, .vgBtn:hover {
-    background: #666;
-    color: #C1E1E0;
-}
+
  p{ 
     max-width: 90%;
     text-align: center;
     margin-left: 25%;
     margin-right: 25%;
-    margin-top: 75px;
-    font-size: larger;
- }
+    margin-top: 0px;
+    font-size: 25px;
+    color:#014D4C;
+}
+
+.status-bar {
+    border: solid 1px  #014D4C;;
+    border-radius: 10px;
+    height: 50px;
+    text-align: center;
+    width: 700px;
+}
+
+
+.container.status {
+    width: 100px;
+    max-width: 700px; 
+    margin-right: 950px;
+}
+
+
+.q1 {
+    border: solid transparent;
+    border-radius: 10px 0 0 10px;
+    padding: 0;
+}
+
+.q10 {
+    border: solid transparent;
+    border-radius: 0 10px 10px 0;
+}
+
+.question-counter {
+    text-align: center;
+}
+
+
+
+/*------------------------ Quiz */
+
+.container {
+    padding: 0;
+}
+
+.menu-buttons {
+    padding: 0;
+    width: 80vw;
+    max-width: 700px;
+}
+
+.menu-buttons .home {
+    float: left;
+    display: block;
+    text-align: center;
+    color: #012928;
+    background-color: #00a896;
+	border-radius:13px;
+    text-align: center;
+	cursor:pointer;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.menu-buttons .end-game {
+    float: right;
+    display: block;
+    text-align: center;
+    color: #012928;
+    background-color: #00a896;
+	border-radius:13px;
+    text-align: center;
+	cursor:pointer;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.menu-buttons .end-game:hover, .menu-buttons .home:hover {
+    padding: 0;
+    display: block;
+    text-align: center;
+    color: #012928;
+    background-color: #f3f5e0ee;
+	border-radius:13px;
+    text-align: center;
+	cursor:pointer;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 6px;
+}
+
+
+
+.score-page-buttons .home, .play-again  {
+	background-color: #00a896;
+	border-radius:13px;
+	border: 0px;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+	color: #012928;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
+    margin-top: 10px;
+}
+
+
+.menu-buttons .end-game:hover, .menu-buttons .home:hover  {
+	background-color:#01B698;
+	border:2px solid #014D4C;
+
+}
+
+#quiz-page-background {
+   background-color: #f3f5e0ee;
+}
+
+#quiz-background {
+    width: 100vw;
+    height: 100vh;
+    padding: 4%;
+    margin: 0;
+    text-align: center;
+}
+
+
+.quiz-container {
+    padding: 10px;
+    text-align: center;
+    width: 95vw;
+    max-width: 700px;
+}
+
+#question {
+    color: #014D4C;
+    font-size: 35px;
+    margin-top: 100px;
+}
+
+.choices {
+    left: 0;
+    bottom: 10px;
+    height: 0;
+    width: 0;
+    margin: auto;
+
+}
+
+.options {
+    background-color:#00a896;
+	border-radius:13px;
+	border: 0px;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+	color:#134c3c;
+	font-family:Arial;
+	font-size:25px;
+	padding:16px 76px;
+	text-decoration:none;
+    margin-top: 10px;
+}
+
+.options:hover{
+    background-color:#e0ceaa;
+	border:2px solid #134c3c;
+}
+
+
+#next {
+	background-color: #00a896;
+	border-radius:13px;
+	border: 0px;
+    text-align: center;
+	cursor:pointer;
+	color: #014D4C;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
+    margin-top: 7px;
+}
+
+#next:hover{
+	background-color:#01B698;
+	border:2px solid #014D4C;
+
+}
+
+.next-container {
+    max-width: 500px;
+}
+
+.see-your-score {
+   text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin-top: 25px;
+}
+
+.see-your-score:hover {
+    font-size: 25px;
+    padding: 0;
+    color: white;
+}
+
+/*------------------------ Score Page */
+.score-container {
+    margin-top: 25vh;;
+    text-align: center;
+}
+
+.score-page-heading h3 {
+    color: white;
+    text-align: center;
+}
+
+
+.score-page-buttons .home, .play-again  {
+	background-color: #00a896;
+	border-radius:13px;
+	border: 0px;
+	display:block;
+    text-align: center;
+	cursor:pointer;
+	color: #014D4C;
+    font-family: 'Noto Sans', sans-serif;
+	font-size:17px;
+	padding:16px 76px;
+	text-decoration:none;
+    margin-top: 10px;
+}
+
+
+.score-page-buttons .home:hover .play-again:hover {
+	background-color:#01B698;
+	border:2px solid #014D4C;
+
+}
+
+.copyright {
+   text-align: center;
+    font-size: 10px;
+    width: 100%;
+    max-width: 100%;
+    height: 30px;
+    margin-bottom: 30px;
+}
+
+/*------------------------ Color classes */
+
+.red {
+background-color: #014D4C;
+}
+
+.green {
+    color:#134c3c;
+}
+
+.tenne {
+    background-color: #00A896;
+}
+
+.olivedrab {
+    background-color: #00A896;
+}
+
+
+@media (max-width: 690px) {
+    body {
+        font-size: 1rem;
+    }
+    .card {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 1rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+    #settings {
+        font-size: 0.8rem;
+    }
+    #password {
+        font-size: 1rem;
+    }
+    #result {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    body {
+        font-size: 0.8rem;
+    }
+    .card {
+        font-size: 0.8rem;
+    }
+    .btn {
+        font-size: 0.8rem;
+        margin: 16px 0px 0px 0px;
+        padding: 10px 15px;
+    }
+    #settings {
+        font-size: 0.8rem;
+    }
+    #password {
+        font-size: 0.8rem;
+    }
+    #result {
+        font-size: 0.8rem;
+    }
+}
