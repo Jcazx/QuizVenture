@@ -13,6 +13,72 @@ body {
     font-size: 30px;
 }
 
+.entername {
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    border-radius: 13px;
+}
+
+.alert {
+    color: #013635;
+    display: inline;
+    font-size: 20px;
+}
+
+#posterSearch {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.submitname {
+    padding: 10px;
+    border-radius: 13px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 15px;
+    text-align: center;
+    height: 50px;
+    background-color: #00a896;
+    color: #013635;
+}
+
+input[type=text] {
+    background: #00a8977b;
+    outline: none;
+    border: 3px solid #013635;
+    color: #013635;
+    font-family: 'arial';
+    font-size: 2em;
+    padding: 9px;
+    margin-right: 0;
+    text-align: center;
+}
+
+ ::-webkit-input-placeholder {
+    color: #013601;
+}
+
+ :-moz-placeholder {
+    color: #013601;
+}
+
+#poster {
+    margin-top: 20px
+}
+
+#poster p {
+    margin-top: 30px;
+    font-size: 20px;
+    color: #013601;
+}
+
+.fetch {
+    padding: 10px 10px;
+}
+
 .Logo {
     margin-left: 38.5%;
 }
