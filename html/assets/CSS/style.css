@@ -417,6 +417,7 @@ p {
     background-color: grey;
 }
 
+
 /*film results page*/
 
 .wrap {
@@ -464,7 +465,7 @@ button {
     color: #013635;
 }
 
-input[type=text] {
+.fetch input[type=text] {
     background: #00a8977b;
     outline: none;
     border: 3px solid #013635;
@@ -659,7 +660,7 @@ input[type=text] {
             margin-top: 90px;
         }
         h1 {
-            display:none
+            display: none
         }
         .menu-buttons {
             padding: 0;
