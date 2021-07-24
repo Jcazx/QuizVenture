@@ -60,10 +60,10 @@ The trivia api that we used to create our questions allowed us to use a range of
 ### Frameworks
 #### [Jquery](https://jquery.com/)
 #### [Skeleton](http://getskeleton.com) 
-we chose to use the skeleton for our results page because of skeleton's focus on smaller projects as noted in their documentation.
+we chose to use the skeleton for our results page because of skeleton's focus on smaller projects as noted in their documentation. It was one of the frameworks that actually slotted pretyy well into our pre exisitng css that we had already started working on 
 # What We Did
 ## Functionality 
- We used multiple javascript pages for each different type of quiz  and used Apis to render the wuestions fro the quiz and as well as using a translate Api to translate the content on the pages and we used local storage to allow for user inout and to allow them to store their name 
+We used multiple javascript pages for each different type of quiz  and used Apis to render the wuestions for the quiz and as well as using a translate Api to translate the content on the pages and we used local storage to allow for user inout and to allow them to store their name so that the site starts to feel aa little bit more personalised 
 ## Planning
 Before we began touching any code we did a lot of talking and planning. We made flow charts, wire frames and a lot of deliberating on what would work the best. While planning did take some time the entire team feels tha planning things out benefited us in the long run when trying to create this project.
 ## Development 
@@ -73,12 +73,12 @@ The planning of the project was extremely successful and as a group we found it 
 ### Challenges
 We found some trouble with the actual APIS. our original plan was to create 3 personality type quiz's on 3 different topics and give the user a result based on their questions. However two of the Apis we attempted to use we ran into a lot of trouble with causing us to have to change our original plan.
 ## Evaluation
-In hindsight we would definitely try out these API's a little bit more before we realised how much we needed to utilise it. We would also probably strech ourselves with more complex ideas as well as try to have our apis interact with one and other more directly.
+In hindsight we would definitely try out these API's a little bit more before we realised how much we needed to utilise it. We would also probably try to experiment with some apis that give us a wider breadth of content to use instead of using apis that provide us with more linear content 
 # Future Development 
 ## Style 
-In the future we would add more animations to the styles and possibly utilise some more complicated styles to make our website look slightly more professional 
+In the future we would add more animations to the styles and possibly utilise some more complicated styles to make our website look slightly more professional. We woulkd also like to add more images within the project and if possible we would like to use our Apis to add more images that are interactive and have somethignntop don with the quuizes that the users are taking.
 ## Features
-We would add an area where users can see the previous scores that they got on other trivia quiz's as well as a score board that ranks the users alongside their top scores 
+We would add an area where users can see the previous scores that they got on other trivia quiz's as well as a score board that ranks the users alongside their top scores so that people on the site can see how well they are doing in comparison to their peers. By utilising local storage we would be abel to give users the feeling of competing with their peers.
 # Screenshots 
 ![screenshot 1](./assets/images/screenshot-1.png)
 ![screenshot 2](./assets/images/screenshot-2.png)
