@@ -4,13 +4,6 @@
   - [Contributors](#contributors)
   - [Formalities](#formalities)
   - [Project Overview](#project-overview)
-  - [Description](#description)
-  - [User Story](#user-story)
-  - [Programmes Used](#programmes-used)
-    - [API's](#apis)
-      - [Google translate Api](#google-translate-api)
-      - [Trivia Api](#trivia-api)
-    - [Frameworks](#frameworks)
       - [Jquery](#jquery)
       - [Skeleton](#skeleton)
 - [What We Did](#what-we-did)
@@ -26,19 +19,20 @@
 - [Screenshots](#screenshots)
 
 # Deployed Github Page 
-Click [here](https://jcazx.github.io/QuizVenture/)
+[ Click here to view the deploeyd github page](https://jcazx.github.io/QuizVenture/)
 
 ## Contributors 
-Aisha Yasin [Github](https://github.com/aisha-ysn)
-Feras Faid [Github](https://github.com/Osir-is)
-Jordelle Clarke - Anderson [Github](https://github.com/Jcazx)
+Aisha Yasin - [Github](https://github.com/aisha-ysn)
+
+Feras Faid - [Github](https://github.com/Osir-is)
+
+Jordelle Clarke Anderson - [Github](https://github.com/Jcazx)
 
 ## Formalities 
 - Clone the Github project onto the local machine
 - Navigate into the project
 - Open the project in VSCode
 - Open the `index.html` file in your default browser
-
 ```
 git clone git@github.com:Jcazx/QuizVenture.git
 code .
