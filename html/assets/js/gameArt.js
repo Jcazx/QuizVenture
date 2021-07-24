@@ -19,7 +19,6 @@ async function getData() {
 // Page loads
 window.onload = function() {
     $('.see-your-score').hide();
-    $('#next').hide();
     $('.score-page').hide();
     $('.done').hide();
     getData();
