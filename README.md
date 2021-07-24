@@ -19,7 +19,7 @@
 - [Screenshots](#screenshots)
 
 # Deployed Github Page 
-[ Click here to view the deploeyd github page](https://jcazx.github.io/QuizVenture/)
+[ Click here to view the deployed github page](https://jcazx.github.io/QuizVenture/)
 
 ## Contributors 
 Aisha Yasin - [Github](https://github.com/aisha-ysn)
