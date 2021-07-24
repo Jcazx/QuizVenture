@@ -86,7 +86,7 @@ In the future we would add more animations to the styles and possibly utilise so
 ## Features
 We would add an area where users can see the previous scores that they got on other trivia quiz's as well as a score board that ranks the users alongside their top scores 
 # Screenshots 
-![screenshot 1](screenshot-1.png)
-![screenshot 2](screenshot-2.png)
-![screenshot 3](screenshot-3.png)
-![screenshot 4](screenshot-4.png)
+![screenshot 1](./assets/images/screenshot-1.png)
+![screenshot 2](./assets/images/screenshot-2.png)
+![screenshot 3](./assets/images/screenshot-3.png)
+![screenshot 4](./assets/images/screenshot-4.png)
